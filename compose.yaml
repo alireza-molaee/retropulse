@@ -1,0 +1,30 @@
+name: retro-tools
+
+services:
+  app:
+    image: retro-tools:${RETRO_TAG:-local}
+    build:
+      context: .
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:24-bookworm-slim}
+    init: true
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${RETRO_PORT:-3000}:3000"
+    volumes:
+      - retro-data:/app/data
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/').then(r => { if (!r.ok) process.exitCode = 1 }).catch(() => { process.exitCode = 1 })"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: local
+
+volumes:
+  retro-data:

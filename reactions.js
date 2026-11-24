@@ -1,0 +1,17 @@
+export const reactions = [
+  { emoji: '👍', label: 'موافقم' },
+  { emoji: '👎', label: 'مخالفم' },
+  { emoji: '❤️', label: 'دوست داشتم' },
+  { emoji: '🎉', label: 'عالیه' },
+  { emoji: '😂', label: 'خنده‌دار' },
+  { emoji: '😮', label: 'غافلگیر شدم' },
+  { emoji: '🤔', label: 'جای فکر داره' },
+  { emoji: '👏', label: 'آفرین' },
+  { emoji: '🔥', label: 'فوق‌العاده‌ست' },
+  { emoji: '🙌', label: 'دمت گرم' },
+  { emoji: '💡', label: 'ایدهٔ خوبیه' },
+  { emoji: '🚀', label: 'بزن بریم' },
+  { emoji: '😕', label: 'مطمئن نیستم' },
+  { emoji: '😢', label: 'ناراحت شدم' },
+  { emoji: '😡', label: 'عصبانی شدم' },
+];

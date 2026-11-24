@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "SG Kara FaNum";
+  src: url("/fonts/SGKara-FaNum-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+  --font: "SG Kara FaNum", "Segoe UI", Tahoma, system-ui, sans-serif;
+  --canvas: light-dark(#f6f7fb, #151521);
+  --surface: light-dark(#fff, #202031);
+  --ink: light-dark(#20223d, #f3f0ff);
+  --muted: light-dark(#59617a, #bcb9d1);
+  --border: light-dark(#e0e3ee, #3c3a52);
+  --accent: light-dark(#5043b4, #bcb0ff);
+  --accent-hover: light-dark(#403497, #d2c9ff);
+  --accent-soft: light-dark(#eeecff, #353050);
+  --on-accent: light-dark(#fff, #241b49);
+  --danger: light-dark(#a42742, #ff9bb1);
+  --danger-soft: light-dark(#fff0f3, #482638);
+  --on-danger: light-dark(#fff, #39111f);
+  --mint-ink: light-dark(#17634f, #a0e0c7);
+  --mint-fill: light-dark(#d8efe6, #254c43);
+  --mint-bg: light-dark(#f1f9f5, #192d2b);
+  --mint-line: light-dark(#d4e9df, #395a51);
+  --peach-ink: light-dark(#8a4625, #ffd0ad);
+  --peach-fill: light-dark(#f9e2d5, #54392e);
+  --peach-bg: light-dark(#fff6f0, #30251f);
+  --peach-line: light-dark(#f0dfd4, #604739);
+  --iris-ink: light-dark(#56459e, #d6c7ff);
+  --iris-fill: light-dark(#e9e3fc, #463861);
+  --iris-bg: light-dark(#f6f3ff, #2a233d);
+  --iris-line: light-dark(#e6def5, #504365);
+  --hero-dot: light-dark(#6356cd27, #bcb0ff30);
+  --hero-start: light-dark(#eae8ff, #33294f);
+  --hero-middle: light-dark(#f0f3fd, #262944);
+  --hero-end: light-dark(#e4f1f5, #1f3440);
+  --hero-border: light-dark(#e1def7, #474063);
+  --s1: .25rem;
+  --s2: .5rem;
+  --s3: .75rem;
+  --s4: 1rem;
+  --s5: 1.25rem;
+  --s6: 1.5rem;
+  --s8: 2rem;
+  --s10: 2.5rem;
+  --radius-control: .65rem;
+  --radius-panel: 1rem;
+  --radius-hero: 1.4rem;
+  --shadow: 0 2px 4px light-dark(#27254907, #0002), 0 12px 26px light-dark(#27254906, #0002);
+  --shadow-dialog: 0 24px 70px light-dark(#1e1b4840, #0008);
+  --backdrop: light-dark(#211e4266, #000a);
+  --focus: light-dark(#6356cd, #d2c9ff);
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }

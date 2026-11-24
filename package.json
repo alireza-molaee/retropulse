@@ -1,0 +1,24 @@
+{
+  "name": "retropulse",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:browser": "npm run build && node --test checks/browser.mjs",
+    "start": "node server.js",
+    "test": "node --test",
+    "build": "esbuild frontend/app.jsx --bundle --minify --outfile=dist/app.js",
+    "prestart": "npm run build",
+    "pretest": "npm run build"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "esbuild": "0.27.2",
+    "playwright": "1.58.2"
+  }
+}

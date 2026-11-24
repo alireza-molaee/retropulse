@@ -1,0 +1,12 @@
+*
+!Dockerfile
+!package.json
+!package-lock.json
+!server.js
+!avatars.js
+!reactions.js
+!surveys.js
+!frontend/
+!frontend/**
+!public/
+!public/**
